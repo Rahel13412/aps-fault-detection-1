@@ -1,4 +1,3 @@
-import pymongo
 import pandas as pd
 import json
 from dataclasses import dataclass
