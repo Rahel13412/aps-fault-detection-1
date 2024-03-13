@@ -1,4 +1,5 @@
 import pandas as pd
+import pymongo
 import json
 from dataclasses import dataclass
 # Provide the mongodb localhost url to connect python to mongodb.
@@ -12,4 +13,4 @@ class EnvironmentVariable:
 
 env_var = EnvironmentVariable()
 mongo_client = pymongo.MongoClient(env_var.mongo_db_url)
-print('mongo_client',mongo_client)
+TARGET_COLUMN = "class"
